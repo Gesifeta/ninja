@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    padding: 2rem;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: lightskyblue;
+}
+
+
+footer{
+    position: fixed;
+    padding: 2rem;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    background-color: lightblue;
+}
