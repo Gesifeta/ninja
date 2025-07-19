@@ -5,14 +5,18 @@ body{
 }
 header{
     position: fixed;
-    padding: 2rem;
+    padding: 1rem;
     top: 0;
     width: 100%;
     text-align: center;
     background-color: lightskyblue;
 }
-
-
+main{
+    margin-top: 200px;
+}
+main h2{
+    border-bottom: solid 2px goldenrod;
+}
 footer{
     position: fixed;
     padding: 2rem;
