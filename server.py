@@ -15,6 +15,6 @@ def about(name):
     response.raise_for_status()
     data = response.json()
     year = datetime.date.today().year
-    return render_template("index.html",year=year,gender=data["gender"], name=data["name"],probability=data["probability"])
+    return render_template("index.html",year=year,gender=data["gender"], name=data["name"].upper(),probability=data["probability"])
 if __name__ == '__main__':
     app.run(debug=True)

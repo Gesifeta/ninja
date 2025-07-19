@@ -14,7 +14,8 @@ header{
 main{
     margin-top: 200px;
 }
-main h2{
+main h1{
+    padding: 2px;
     border-bottom: solid 2px goldenrod;
 }
 footer{
