@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My blog spaces</title>
+</head>
+<body>
+<h1>My blog spaces</h1>
+<div>
+    {% for blog in my_blogs: %}
+    <h2>{{blog["title"]}}</h2>
+    <p>{{blog["content"]}}</p>
+    {% endfor %}
+</div>
+
+</body>
+</html>
