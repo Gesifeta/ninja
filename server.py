@@ -21,6 +21,12 @@ def blogs():
     with open("blog.json") as f:
         my_blogs = json.load(f)
         return render_template("blog.html",my_blogs=my_blogs)
+@app.route("/blog/<int:id>")
+def get_post(id):
+    with open("blog.json") as f:
+        my_blogs = json.load(f)
+        my_blog = my_blogs[id]
+        return render_template("blog.html",my_blog=my_blog,id=id)
 
 if __name__ == '__main__':
     app.run(debug=True)

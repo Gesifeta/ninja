@@ -6,11 +6,17 @@
 </head>
 <body>
 <h1>My blog spaces</h1>
+<a href ='{{url_for("get_post",id=3)}}'>Home</a>
 <div>
+    {% if my_blog: %}
+    <h2>{{my_blog.title}}</h2>
+    <p>{{my_blog.content}}</p>
+    {% else %}
     {% for blog in my_blogs: %}
     <h2>{{blog["title"]}}</h2>
     <p>{{blog["content"]}}</p>
     {% endfor %}
+    {% endif %}
 </div>
 
 </body>
